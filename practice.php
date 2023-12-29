@@ -37,20 +37,3 @@ $calendar_2018 = [
 
 // 12月を表示する
 echo $calendar_2018["December"];
-
-$name = SotaMatsuno;
-
-if ($name = SotaMatsuno) {
-    echo "私は あなたの名前 です";
-} else {
-    echo "あなたの名前ではありません";
-}
-
-
-$total = 0;
-echo $total;
-
-for ($i = 0; $i <= 10000; $i++) {
-    $total += $i;
-}
-echo $total;
