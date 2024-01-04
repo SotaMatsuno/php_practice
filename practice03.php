@@ -11,7 +11,7 @@
 
 $name = "SotaMatsuno";
 
-if ($name = "SotaMatsuno") {
+if ($name == "SotaMatsuno") {
     echo "私は あなたの名前 です";
 } else {
     echo "あなたの名前ではありません";
@@ -32,8 +32,8 @@ echo "\n";
 
 $fruits = array("orange","apple","grape","lemon","cherry");
 
-foreach($fruits as $fruits){
-    echo "要素は" . $fruits;
+foreach($fruits as $fruit){
+    echo "要素は" . $fruit;
     echo "\n";
 }
 
@@ -46,5 +46,18 @@ for($i = 1; $i <= 100; $i++){
   if($start % 5 === 0){
     echo $start;
     echo "\n";
+  }
+}
+
+/* for文の始めの値を定義する */
+$start = 1;
+/* for文の終わりの値を定義する */
+$end = 100;
+
+for($i = $start; $i <= $end; $i++){
+
+  // 5で割り切れたら{}内を実行する
+  if($i % 5 == 0){
+    echo $i;
   }
 }
